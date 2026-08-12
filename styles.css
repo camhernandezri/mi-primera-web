@@ -11,11 +11,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(-45deg, #0d0221, #1a0b3d, #2e0854, #120324);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-  color: #f0e6ff;
+  font-family: 'Georgia', 'Segoe UI', serif;
+  background: linear-gradient(135deg, #020817, #0a1628, #0d1b2a, #020817);
+  background-size: 300% 300%;
+  animation: gradientShift 18s ease infinite;
+  color: #f0e6d2;
   text-align: center;
   padding: 2rem;
   overflow: hidden;
@@ -28,44 +28,49 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* ===== Título en 3D girando (más lento) ===== */
+/* ===== Título elegante en 3D (estático) ===== */
 h1 {
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #ff2ee6;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #f5d585;
   text-transform: uppercase;
-  perspective: 800px;
-  transform-style: preserve-3d;
-  animation: spin3d 12s linear infinite;
-  text-shadow:
-    0 1px 0 #d600c4,
-    0 2px 0 #a300a3,
-    0 3px 0 #7b0082,
-    0 4px 0 #52005a,
-    0 5px 20px rgba(255, 46, 230, 0.6),
-    0 0 30px rgba(157, 0, 255, 0.5);
   margin-bottom: 1.5rem;
+  text-shadow:
+    0 1px 0 #d4af5f,
+    0 2px 0 #c39a4a,
+    0 3px 0 #b28536,
+    0 4px 0 #a17023,
+    0 5px 0 #905c10,
+    0 6px 8px rgba(0, 0, 0, 0.7),
+    0 10px 20px rgba(0, 0, 0, 0.5),
+    0 0 25px rgba(245, 213, 133, 0.25);
 }
 
-@keyframes spin3d {
-  0%   { transform: rotateY(0deg); }
-  100% { transform: rotateY(360deg); }
+/* ===== Línea decorativa ===== */
+h1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  margin: 1.2rem auto 0;
+  background: linear-gradient(90deg, transparent, #f5d585, transparent);
 }
 
 /* ===== Párrafos ===== */
 p {
   font-size: 1.1rem;
   max-width: 600px;
-  margin: 0.4rem auto;
-  color: #c9b6ff;
+  margin: 0.5rem auto;
+  color: #9fb8d9;
   animation: fadeIn 2s ease-in;
+  letter-spacing: 0.5px;
 }
 
 p:first-of-type {
   font-weight: 600;
-  color: #00fff7;
-  text-shadow: 0 0 8px rgba(0, 255, 247, 0.5);
+  color: #7fa8d9;
+  margin-top: 1.5rem;
 }
 
 @keyframes fadeIn {
@@ -73,16 +78,16 @@ p:first-of-type {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== Brillos de fondo estilo neón ===== */
+/* ===== Brillos de fondo sutiles (azul y dorado) ===== */
 body::before {
   content: "";
   position: absolute;
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, rgba(157, 0, 255, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(31, 90, 158, 0.25), transparent 70%);
   border-radius: 50%;
-  top: 10%;
-  left: 10%;
+  top: 8%;
+  left: 8%;
   z-index: -1;
   animation: float 10s ease-in-out infinite;
 }
@@ -92,23 +97,24 @@ body::after {
   position: absolute;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(0, 255, 247, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(245, 213, 133, 0.12), transparent 70%);
   border-radius: 50%;
-  bottom: 10%;
-  right: 10%;
+  bottom: 8%;
+  right: 8%;
   z-index: -1;
-  animation: float 12s ease-in-out infinite reverse;
+  animation: float 13s ease-in-out infinite reverse;
 }
 
 @keyframes float {
   0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(40px, -30px); }
+  50% { transform: translate(35px, -25px); }
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 480px) {
   h1 {
     font-size: 2rem;
+    letter-spacing: 1.5px;
   }
   p {
     font-size: 1rem;
