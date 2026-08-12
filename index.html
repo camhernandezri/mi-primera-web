@@ -1,14 +1,299 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera web en la nube</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camilo Hernández Rincón — Ingeniero de Sistemas</title>
+<meta name="description" content="Hoja de vida de Camilo Hernández Rincón, estudiante de Ingeniería de Sistemas: desarrollo full stack, automatización con APIs, geocodificación y despliegue en la nube.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hola, soy Camilo Hernández Rincón</h1>
-  <p>Estudiante de Ingeniería de Sistemas · Electiva Cloud Computing.</p>
-  <p>Esta página está desplegada en la nube.</p>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a href="#top" class="brand">CH<span class="brand__dot">·</span>RINCÓN</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#about">Perfil</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#education">Formación</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <div class="status-pill" role="status">
+      <span class="status-dot" aria-hidden="true"></span>
+      DISPONIBLE
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__console" aria-hidden="true">
+        <span>SYS.DESPACHO</span>
+        <span class="console-sep">/</span>
+        <span>LAT 5.5353° N</span>
+        <span class="console-sep">/</span>
+        <span>LON 73.3678° W</span>
+        <span class="console-sep">/</span>
+        <span>TUNJA · BOYACÁ · CO</span>
+      </div>
+
+      <p class="eyebrow">Ingeniería de Sistemas — 8.º semestre · Universidad Santo Tomás, Tunja</p>
+      <h1 class="hero__name">Camilo Hernández<br>Rincón</h1>
+      <p class="hero__tagline">
+        Desarrollo web &amp; animaciones UI, automatización con APIs y geocodificación,
+        gestión de software, analítica de datos e IA.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="mailto:camhernandezri@gmail.com">Escribir un correo</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/camhernandezri" target="_blank" rel="noopener">
+          Ver LinkedIn
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <ul class="hero__stack" aria-label="Tecnologías principales">
+        <li>Node.js</li>
+        <li>React</li>
+        <li>MongoDB</li>
+        <li>WhatsApp / Telegram API</li>
+        <li>Google Maps Geocoding</li>
+        <li>Google Cloud</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap about__grid">
+      <div class="about__copy">
+        <p class="section-label">01 · Perfil</p>
+        <h2 class="section-title">De requisitos a producción, en tiempo real.</h2>
+        <p>
+          Estudiante de Ingeniería de Sistemas de octavo semestre en la Universidad Santo Tomás –
+          Seccional Tunja, enfocado en transformar procesos a través de la arquitectura de
+          software, la analítica de datos y la inteligencia artificial.
+        </p>
+        <p>
+          Recientemente lideré la creación de un sistema de despacho automatizado
+          (<strong>Chatbot Trans Andes</strong>), integrando APIs de mensajería —WhatsApp y
+          Telegram— con geolocalización en tiempo real, aplicando arquitecturas full-stack y
+          despliegue en la nube de extremo a extremo.
+        </p>
+        <p>
+          Mi trayectoria previa en atención al cliente aporta comunicación asertiva, análisis
+          de necesidades del usuario y capacidad de resolver problemas bajo presión — habilidades
+          que hoy sostienen mi forma de construir software centrado en las personas que lo usan.
+        </p>
+      </div>
+
+      <div class="about__panel" aria-label="Resumen en cifras">
+        <div class="panel-row">
+          <span class="panel-label">PROYECTO ANCLA</span>
+          <span class="panel-value">Chatbot Trans Andes</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">DESPACHO 24/7</span>
+          <span class="panel-value">3 plataformas sincronizadas</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">ÁREAS DE ENFOQUE</span>
+          <span class="panel-value">Backend · Integraciones · Datos &amp; IA</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">METODOLOGÍA</span>
+          <span class="panel-value">Scrum / ISO 9001 / DevOps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section--alt">
+    <div class="wrap">
+      <p class="section-label">02 · Habilidades</p>
+      <h2 class="section-title">Stack de trabajo</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Backend &amp; Nube</h3>
+          <ul class="tag-list">
+            <li>Node.js</li><li>Express</li><li>MongoDB Atlas</li><li>Render</li>
+            <li>Google Cloud Platform</li><li>Webhooks</li><li>APIs REST</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Frontend &amp; UI</h3>
+          <ul class="tag-list">
+            <li>React</li><li>Vite</li><li>TailwindCSS</li><li>HTML5 / CSS3</li>
+            <li>Animaciones UI</li><li>SPA</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Integraciones &amp; Datos</h3>
+          <ul class="tag-list">
+            <li>WhatsApp Business API</li><li>Telegram Bot API</li>
+            <li>Google Maps Geocoding</li><li>SQL / NoSQL</li><li>IA generativa</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Gestión &amp; Metodologías</h3>
+          <ul class="tag-list">
+            <li>Scrum</li><li>Trello</li><li>ISO 9001</li><li>DevOps</li>
+            <li>Análisis de requisitos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <p class="section-label">03 · Experiencia</p>
+      <h2 class="section-title">Bitácora de despacho</h2>
+
+      <ol class="log">
+
+        <li class="log-entry log-entry--active">
+          <div class="log-meta">
+            <span class="log-dot" aria-hidden="true"></span>
+            <span class="log-date">FEB 2026 → MAY 2026</span>
+            <span class="log-tag log-tag--live">EN PRODUCCIÓN</span>
+          </div>
+          <h3 class="log-role">Desarrollador Full Stack</h3>
+          <p class="log-org">Transportadora de los Andes S.A.S</p>
+          <p class="log-desc">
+            Lideré el diseño, desarrollo y despliegue de un ecosistema de automatización de
+            despacho de taxis 24/7, transformando un modelo operativo manual en una arquitectura
+            interconectada en la nube con comunicación en tiempo real entre clientes, conductores
+            y administración.
+          </p>
+          <ul class="log-points">
+            <li><strong>Arquitectura backend &amp; nube:</strong> núcleo del sistema en Node.js con MongoDB, alojado en Render, con webhooks bidireccionales y concurrencia para sincronizar tres plataformas en milisegundos.</li>
+            <li><strong>Frontend conversacional (WhatsApp Business API):</strong> chatbot para recepción de solicitudes y agendamientos, con manejo de excepciones, cancelaciones por inactividad y validaciones de Habeas Data.</li>
+            <li><strong>Inteligencia geoespacial (Google Maps Geocoding API):</strong> validación de coordenadas en tiempo real para confirmar la jurisdicción de operación autorizada.</li>
+            <li><strong>Automatización de flota (Telegram Bot API):</strong> asignación de viajes bajo un modelo "primero en aceptar", con vinculación automática de perfiles vía TelegramId.</li>
+            <li><strong>Panel administrativo:</strong> SPA desplegada en Vercel con CRUD de taxistas, reportes paginados en tiempo real y módulo de reseñas de calidad.</li>
+          </ul>
+          <ul class="tag-list tag-list--tech">
+            <li>Node.js</li><li>Express</li><li>MongoDB Atlas</li><li>React / Vite</li>
+            <li>TailwindCSS</li><li>Meta Business API</li><li>Telegram API</li>
+            <li>Google Cloud (Maps)</li><li>Render</li><li>Vercel</li><li>Scrum / Trello</li>
+          </ul>
+        </li>
+
+        <li class="log-entry">
+          <div class="log-meta">
+            <span class="log-dot" aria-hidden="true"></span>
+            <span class="log-date">AGO 2025 → OCT 2025</span>
+            <span class="log-tag">TUNJA, BOYACÁ</span>
+          </div>
+          <h3 class="log-role">Analista de Requisitos — Proyecto "Cuartel de Bombermans"</h3>
+          <p class="log-org">Universidad Santo Tomás — Seccional Tunja (proyecto académico)</p>
+          <p class="log-desc">
+            Responsable del levantamiento y análisis de requisitos, elaboración de documentación
+            funcional y técnica, y diseño de mockups de interfaz, asegurando alineación con las
+            necesidades del usuario. Participé en la definición de alcance y en la toma de
+            decisiones durante el desarrollo.
+          </p>
+        </li>
+
+        <li class="log-entry">
+          <div class="log-meta">
+            <span class="log-dot" aria-hidden="true"></span>
+            <span class="log-date">FEB 2025 → ABR 2025</span>
+            <span class="log-tag">TUNJA, BOYACÁ</span>
+          </div>
+          <h3 class="log-role">Gestión de Proyecto — Plataforma "Juez Virtual"</h3>
+          <p class="log-org">Universidad Santo Tomás — Seccional Tunja (proyecto académico)</p>
+          <p class="log-desc">
+            Diseño de una plataforma tipo juez virtual para programación competitiva. Encargado
+            del levantamiento de requisitos, documentación técnica y definición de procesos:
+            gestión de usuarios, evaluación automática de soluciones y control de envíos.
+          </p>
+        </li>
+
+        <li class="log-entry">
+          <div class="log-meta">
+            <span class="log-dot" aria-hidden="true"></span>
+            <span class="log-date">NOV 2021 → FEB 2022</span>
+            <span class="log-tag">BOGOTÁ, D.C.</span>
+          </div>
+          <h3 class="log-role">Customer Service Agent</h3>
+          <p class="log-org">TP — cuenta Sunrun (energía solar)</p>
+          <p class="log-desc">
+            Atención y soporte para usuarios del sector de energía solar: consultas de servicios,
+            contratos, facturación y estado de instalaciones. Manejo de llamadas entrantes,
+            registro en sistemas internos y cumplimiento de métricas de calidad y satisfacción.
+          </p>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTS -->
+  <section id="education" class="section section--alt">
+    <div class="wrap edu__grid">
+      <div>
+        <p class="section-label">04 · Formación</p>
+        <h2 class="section-title">Educación</h2>
+        <div class="edu-card">
+          <h3>Ingeniería de Sistemas</h3>
+          <p class="edu-org">Universidad Santo Tomás — Seccional Tunja</p>
+          <p class="edu-date">Desde agosto de 2022 · 8.º semestre</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="section-label">05 · Certificaciones</p>
+        <h2 class="section-title">Formación complementaria</h2>
+        <ul class="cert-list">
+          <li>Scrum Fundamentals Certified</li>
+          <li>I Congreso Internacional de Investigación en Ingeniería de Sistemas</li>
+          <li>II Congreso Internacional de Departamentos Académicos</li>
+          <li>Workshop de Inteligencia Artificial y Machine Learning: IA para profesionales</li>
+          <li>Seminario de Cloud Computing — Azure for Students</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap contact__inner">
+      <p class="section-label">06 · Contacto</p>
+      <h2 class="section-title contact__title">
+        Busco proyectos que desafíen la automatización,<br>
+        la gestión de software y el análisis de datos.
+      </h2>
+      <div class="contact__links">
+        <a class="btn btn--primary" href="mailto:camhernandezri@gmail.com">camhernandezri@gmail.com</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/camhernandezri" target="_blank" rel="noopener">linkedin.com/in/camhernandezri</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span>Camilo Hernández Rincón</span>
+    <span>Tunja, Boyacá, Colombia</span>
+  </div>
+</footer>
+
 </body>
 </html>
